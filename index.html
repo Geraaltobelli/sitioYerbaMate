@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!--Etiqueta de inicio-->
+    <meta charset="UTF-8">
+    <!--viewport indica que la web se va a ir adaptando a los diferentes tipos de pantallas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Materos</title>
+</head>
+
+<body>
+    <!--Dentro del Header podemos agregar el nav para tener la barra de navegacon en el encabezado de la pagina-->
+    <header>
+       <picture>
+            <img src="/Proyecto/media/img/logo.png" alt="Logo del Sitio." width="150" height="150" style="border: 2px solid;">
+       </picture>
+       <!--Barra de navegacion de mi sitio.-->
+       <nav style="border: 2px solid red">
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <section >
+            <div style="width: 20%;">
+                <h2 style="border: 2px solid yellow">Como preparar un buen mate.</h2>
+                <video controls poster="/Proyecto/media/img/preview.jpg" width="100%" height="200px" style="border: 2px solid yellow">
+                    <source src="/Proyecto/media/video/video.mp4" type="video/mp4"> Tu Navegador no soporta video.
+                    <track src="../Proyecto/media/video/video.mp4.vtt" kind="subtitles" srclang="es" label="Español" default>
+                    <track src="subtitulosEn.vtt" kind="subtitles" srclang="en" label="Ingles" >
+                    El navegador no soporta la etiqueta !video"
+                </video>
+            </div>
+        </section>
+    
+        <section style="border: 2px solid green">
+            <h5 style="border: 2px solid red">Contenido Externo a la Web</h5>
+            <iframe src="https://www.youtube.com/embed/V2oz8H4c9Fc?si=yFStWX2QMvH64oGL" width="200" height="200" title="Tipos de Mates" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section style="border: 2px solid red">
+            <audio controls>
+                <source src="/Proyecto/media/audio/Pia.mp3" type="audio/mp3">
+                Tu navegador no soporta la reproduccion de audio.
+            </audio>
+        </section>
+
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form action="https://formspree.io/f/xwplagop"method="POST" style="border: 2px solid blue;">
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required><br>  
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su Email" required><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="message" id="mensaje" maxlength="50" placeholder="Ingrese un mensaje de 50 palabras." required ></textarea><br>
+            <button type="submit">Enviar.</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Acá estamos dentro del footer-->
+        
+    </footer>
+
+</body>
+</html><!--Etiqueta de Fin-->
